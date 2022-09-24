@@ -5,7 +5,7 @@ from matplotlib_venn import venn2, venn3
 def conjunto1():
     print("       ========================================================")
     print(f"       \n     "
-          f"    Resuelva el siguiente enunciado: (( ¬D ∩ ¬A) ꚛ ¬F)\n")
+          f"    Resuelva el siguiente enunciado: (( ¬D ∩ ¬B) ꚛ ¬F)\n")
 
     B = {15, 100, 40}
     D = {45, 20, 60}
@@ -15,7 +15,7 @@ def conjunto1():
 
     resultado1 = ((U - D) & (U - B) ^ (U - F))
 
-    print(f"         El resultado de: (( ¬D ∩ ¬A) ꚛ ¬F) es:  \n"
+    print(f"         El resultado de: (( ¬D ∩ ¬B) ꚛ ¬F) es:  \n"
           f"         = {resultado1}\n")
 
     for numero in resultado1:
