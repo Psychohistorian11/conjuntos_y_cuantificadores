@@ -29,7 +29,7 @@ def conjunto1():
         lista = [(B - (D | F)), ((B & D) - F), (D - (B | F)), (B & D & F), ((F & B) - D), ((F & D) - B), (F - (B | D))]
         for x in range(len(lista)):
             if lista[x] == set():
-                lista[x] = "{vacio}"
+                lista[x] = "{}"
         return lista
 
     list = lista_BDF()
@@ -78,5 +78,11 @@ def conjunto2():
     diagrama.get_label_by_id("11").set_text(A & E)
     diagrama.get_label_by_id("10").set_text(A - E)
     diagrama.get_label_by_id("01").set_text(E - A)
-    plt.title(U - (A | E))
+
+    #colores
+    plt.title(U - (A | E)).set_color("#1C8CD1")
+    diagrama.get_label_by_id("11").set_color("#1C8CD1")
+    diagrama.get_label_by_id("10").set_color("#1C8CD1")
+
+
     plt.show()
